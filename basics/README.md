@@ -107,12 +107,42 @@ div > p {
     color: red;
 }
 ```
+```html
+<div>
+    <div>Not applied</div>
+    <p>CSS applied</p>
+    <div>Not applied</div>
+    <article>
+        <p>Not applied</p>
+    </article>
+    <p>CSS applied</p>
+</div>
+```
 ### Descendant
 ```css
 div  p {
 color: red;
 }
 ```
+```html
+<div>
+    <div>Not applied</div>
+    <p>CSS applied</p>
+    <div>Not applied</div>
+    <article>
+        <p>CSS applied</p>
+    </article>
+    <p>CSS applied</p>
+</div>
+```
+<hr>
 
+## The Box Model
+The CSS box model is essentially a box that wraps around every HTML element. It consists of: margins, borders, padding, and the actual content.
 
+<hr/>
 
+## Margin collapsing
+The top and bottom margins of blocks are sometimes combined (collapsed) into a single margin whose size is the largest of the individual margins (or just one of them, if they are equal).
+* Collapsing margins is only relevant in the vertical direction.
+* Margins don't collapse in a container with display set to flex.
