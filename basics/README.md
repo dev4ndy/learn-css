@@ -146,3 +146,14 @@ The CSS box model is essentially a box that wraps around every HTML element. It 
 The top and bottom margins of blocks are sometimes combined (collapsed) into a single margin whose size is the largest of the individual margins (or just one of them, if they are equal).
 * Collapsing margins is only relevant in the vertical direction.
 * Margins don't collapse in a container with display set to flex.
+
+<hr/>
+
+## Pseudo Classes
+Define the style of a special state of an element
+* Are defined with a single colon `:` and then the class name like `hover` or `active`
+
+
+## Pseudo Elements
+Defines the style of a specific part of an element
+* Are defined by adding two colons `::` and then the element name.
