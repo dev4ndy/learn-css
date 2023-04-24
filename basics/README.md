@@ -157,3 +157,20 @@ Define the style of a special state of an element
 ## Pseudo Elements
 Defines the style of a specific part of an element
 * Are defined by adding two colons `::` and then the element name.
+
+
+## Position
+
+### Fixed
+* When applying fixed position to an element, it is outside the actual document flow.
+* When applying fixed position to an element, it changes the general behavior from a block level element to a inline block element.
+* When applying fixed position to an element, its context position is the viewport.
+
+### Absolute
+* When applying absolute position to an element, its context position is defined based on two cases
+    * if none of the ancestors of the parent elements has a position applied then the positioning context is simply the HTML element.
+    * If we have any position ancestors, then the closest ancestors which has the position property applied is the positioning contextfor the element.
+
+### Relative
+* When applying relative position to an element, its context position is the element itself.
+* When applying relative position to an element, it is NOT outside the actual document flow.
