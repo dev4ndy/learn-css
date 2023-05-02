@@ -174,3 +174,8 @@ Defines the style of a specific part of an element
 ### Relative
 * When applying relative position to an element, its context position is the element itself.
 * When applying relative position to an element, it is NOT outside the actual document flow.
+
+### Sticky
+* When applying sticky position to an element, we should specify the distance between our element and the viewport using the `top` property.
+* As soon as the element reaches the distance, the element behaves as fixed
+* The element stops being fixed as soon as it reaches the end of the content of its parent element.

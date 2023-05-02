@@ -3,7 +3,8 @@ main {
 }
 
 .backgroud {
-    background: url("../images/plans-background.jpg");
+    background: url("../images/plans-background.jpg") center/cover;
+    filter: grayscale(50%);
     position: fixed;
     width: 100%;
     height: 100%;
